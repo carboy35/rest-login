@@ -29,4 +29,4 @@ spec:
               configMapKeyRef:
                 name: hostname-config
                 key: postgres_host
-        image: <your Docker Hub account>/spring-boot-postgres-on-k8s:v1
+        image: carboy35/rest-login:latest
