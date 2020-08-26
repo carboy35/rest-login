@@ -1,18 +1,18 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: spring-boot-postgres-sample
+  name: rest-login
   namespace: default
 spec:
   replicas: 1
   template:
     metadata:
-      name: spring-boot-postgres-sample
+      name: rest-login
       labels:
-        app: spring-boot-postgres-sample
+        app: rest-login
     spec:
       containers:
-      - name: spring-boot-postgres-sample
+      - name: rest-login
         env:
           - name: POSTGRES_USER
             valueFrom:
